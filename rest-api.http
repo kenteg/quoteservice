@@ -1,0 +1,62 @@
+POST http://localhost:8080/updatequotes
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "quotes":
+  [
+    {
+      "isin": "aaaaaaaaaa11",
+      "bid": "31",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa02",
+      "bid": "32",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa03",
+      "bid": "33",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa04",
+      "bid": "34",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa05",
+      "bid": "35",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa06",
+      "bid": "36",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa07",
+      "bid": "37",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa08",
+      "bid": "38",
+      "ask": "21"
+    },
+    {
+      "isin": "aaaaaaaaaa09",
+      "bid": "39",
+      "ask": "21"
+    }
+  ]
+}
+###
+
+GET http://localhost:8080/allelvls
+Accept: application/json
+
+###
+
