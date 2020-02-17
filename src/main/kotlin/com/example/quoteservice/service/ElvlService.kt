@@ -30,4 +30,9 @@ class ElvlService(
     fun getAllElvls(): List<QuoteElvlResponse>{
         return quoteRepo.findAllByOrderByIsin().map{ QuoteElvlResponse(it.isin, it.elvl)}
     }
+
+    fun getElvlByIsin(isin: String): QuoteElvlResponse{
+        val quote = quoteRepo.findById(isin).orElse(null)
+        return QuoteElvlResponse(isin, quote?.elvl)
+    }
 }

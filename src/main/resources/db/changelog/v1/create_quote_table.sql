@@ -7,8 +7,6 @@ create table QUOTE
     BID                   NUMBER(10, 2),
     ASK                   NUMBER(10, 2) NOT NULL,
     ELVL                  NUMBER(10, 2),
-    REV                   NUMBER(5),
-
     CONSTRAINT quote_pk PRIMARY KEY (ISIN)
 );
 

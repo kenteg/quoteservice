@@ -11,15 +11,14 @@ import javax.persistence.Id
 import javax.validation.constraints.Size
 
 @Entity
-data class Audit(
+data class History(
         @Id
-        @GeneratedValue(strategy = GenerationType.AUTO)
-        val id: Long? = null,
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        val id: Long? = 0,
         val isin: String,
         val bid: BigDecimal?,
         val ask: BigDecimal,
-        var elvl: BigDecimal?,
-        val createDate: LocalDateTime,
+        val createTime: LocalDateTime,
         val action: String?
 
 ): Serializable
